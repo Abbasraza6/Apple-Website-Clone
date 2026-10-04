@@ -1,0 +1,491 @@
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.manrope {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.app-container-wrapper {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.global-nav-list {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  position: fixed;
+  background-color: #1d1d20ee;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 50px;
+  align-items: center;
+  color: #b0b0b0;
+  text-decoration: none;
+  padding-left: 10px;
+  z-index: 999;
+  margin: 0;
+}
+
+li {
+  font-size: 1.0em;
+  text-decoration: none;
+}
+
+.fa-brands {
+  font-size: 1.5em;
+}
+
+.nav-link {
+  color: #b0b0b0;
+  text-decoration: none;
+}
+
+.hero-logo-container {
+  background-color: black;
+  height: auto;
+  justify-content: center;
+  display: flex;
+  padding-top: 30px;
+}
+
+.hero-logo-img {
+  max-width: 300px !important;  
+  height: auto;
+  display: block !important;
+  margin: 0 auto 15px auto !important;
+}
+
+.hero-section {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+  text-align: center;
+}
+
+#hero-main-heading {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+#hero-sub-heading {
+  text-align: center;
+  color: #8d8d8d;
+}
+
+.cta-group {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  text-decoration: none;
+  color: white;
+  background-color: #0071E3;
+  height: 45px;
+  width: 220px;
+  border-radius: 30px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  font-size: 1em;
+}
+
+.btn-secondary {
+  text-decoration: none;
+  color: #0071E3;
+  background-color: black;
+  height: 45px;
+  width: 220px;
+  border-radius: 30px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  font-size: 1em;
+  border: 1px solid #0071E3;
+}
+
+.btn-secondary:hover {
+  color: white;
+  background-color: #0071E3;
+}
+
+.hero-banner-media {
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  background-color: black;
+  padding-top: 20px;
+}
+
+.father-img {
+  width: 100%;
+  display: block;
+}
+
+.promo-father-day {
+  background-image: url('Images/father-day-img.png');
+  height: 602px;
+  width: 100%;
+  background-size: cover;
+  margin-top: 15px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.promo-college {
+  height: 620px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('Images/div-four.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  padding: 0 15px;
+}
+
+.promo-college-title {
+  font-size: 3.0em;
+  margin-bottom: 0;
+}
+
+.promo-college-subtitle {
+  margin-top: 10px;
+}
+
+.promo-college-btn {
+  text-decoration: none;
+  color: white;
+  background-color: #0071E3;
+  height: 45px;
+  width: 150px;
+  border-radius: 30px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  font-size: 1.1em;
+}
+
+.dashboard-grid-root {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.grid-row-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 15px;
+  padding: 0 15px;
+  margin-bottom: 15px;
+}
+
+.card-iphone,
+.card-child-safety,
+.card-macbook,
+.card-ipad-air,
+.card-apple-card,
+.card-trade-in {
+  width: 50%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  padding: 30px 15px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.card-iphone { background-image: url('Images/div-five-one.jpg'); }
+.card-child-safety { background-image: url('Images/div-five-two.jpg'); color: white; }
+.card-macbook { background-image: url('Images/div-five-three.jpg'); }
+.card-ipad-air { background-image: url('Images/div-five-five.jpg'); }
+.card-apple-card { background-image: url('Images/dive-six.jpg'); }
+.card-trade-in { background-image: url('Images/div-seven.jpg'); }
+
+.card-iphone-title, .card-child-safety-title, .card-macbook-title, .card-apple-card-title {
+  font-size: 2.2em;
+  margin-bottom: 0;
+}
+
+.card-child-safety-title { 
+  color: white; 
+  margin-top: 0px; 
+}
+
+  .card-child-safety-subtitle { color: white; font-size: 1.1em; }
+
+.card-iphone-subtitle, .card-macbook-subtitle, .card-ipad-subtitle, .card-apple-card-subtitle, .card-trade-in-title {
+  font-size: 1.1em;
+  margin-top: 10px;
+}
+
+.card-iphone-actions, .card-macbook-actions, .card-ipad-actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.card-iphone-btn-shop, .card-child-safety-btn, .card-macbook-btn1, .card-ipad-btn1, .card-apple-card-btn, .card-trade-in-btn {
+  text-decoration: none;
+  color: white;
+  background-color: #0071E3;
+  height: 40px;
+  padding: 0 20px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9em;
+}
+
+.card-iphone-btn-learn, .card-macbook-btn2, .card-ipad-btn2 {
+  text-decoration: none;
+  color: #0071E3;
+  background-color: transparent;
+  height: 40px;
+  padding: 0 20px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9em;
+  border: 1px solid #0071E3;
+}
+
+.card-iphone-btn-learn:hover, .card-macbook-btn2:hover, .card-ipad-btn2:hover {
+  color: white;
+  background-color: #0071E3;
+}
+
+.ipad-air-brand, .card-badge-img, .trade-in-brand {
+  height: 40px;
+  margin-top: 20px;
+  object-fit: contain;
+}
+
+.legal-disclaimer-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 20px 10%;
+  background-color: #F5F5F7;
+  color: #6c6c6c;
+  font-size: 0.75em;
+}
+
+.disclaimer-list-top {
+  margin-top: 15px;
+}
+
+.disclaimer-list-sub {
+  padding-left: 0;
+}
+
+.divider-line-top {
+  width: 100%;
+  margin: 20px 0;
+}
+
+.footer-links-grid {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 10%;
+  justify-content: space-between;
+  background-color: #f5f5f5;
+}
+
+.footer-column {
+  font-size: 0.75em;
+  flex: 1;
+  min-width: 150px;
+  margin-bottom: 20px;
+}
+
+.footer-links-ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links-li {
+  margin-top: 7px;
+  color: #6c6c6c;
+}
+
+.footer-column-heading {
+  color: black;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.footer-copyright-p {
+  padding: 20px 10%;
+  font-size: 0.75em;
+  color: #6c6c6c;
+  background-color: #F5F5F7;
+  margin: 0;
+}
+
+.divider-wrapper-bottom {
+  padding: 0 10%;
+  background-color: #F5F5F7;
+}
+
+#divider-line-bottom {
+  border: none;
+  border-top: 1px solid #d6d6d6;
+  margin: 0;
+}
+
+.footer-legal-link {
+  color: black;
+  margin-right: 15px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 5px;
+}
+
+.footer-region-link {
+  color: black;
+  float: right;
+  text-decoration: none;
+}
+
+.fa-bars, .fa-solid, .material-symbols-outlined {
+  display: none;
+}
+
+@media screen and (max-width: 999px) {
+  .li-hide {
+    display: none;
+  }
+
+  .global-nav-list {
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+
+  .fa-bars {
+    display: block;
+  }
+
+  .grid-row-container {
+    flex-direction: column;
+    padding: 0 10px;
+    gap: 15px;
+  }
+
+  .card-iphone,
+  .card-child-safety,
+  .card-macbook,
+  .card-ipad-air,
+  .card-apple-card,
+  .card-trade-in {
+    width: 100% !important;
+    margin: 0;
+  }
+
+  .footer-links-grid {
+    flex-direction: column;
+    padding: 20px 5%;
+  }
+  
+  .footer-region-link {
+    float: none;
+    display: block;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-section {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  #hero-main-heading {
+    font-size: 2.2rem;
+  }
+  
+  .promo-college-title {
+    font-size: 2.4rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  #hero-main-heading {
+    font-size: 1.8rem;
+  }
+
+  .promo-college {
+    height: 400px !important;
+    background-size: cover !important;
+    background-position: center center !important;
+  }
+
+  .promo-college-title {
+    font-size: 2rem;
+  }
+
+  .card-iphone-title, 
+  .card-child-safety-title, 
+  .card-macbook-title, 
+  .card-apple-card-title {
+    font-size: 1.8rem;
+    margin-top: 20px !important;
+  }
+
+  .cta-group {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .btn-primary, .btn-secondary {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #hero-main-heading {
+    font-size: 1.4rem;
+  }
+  
+  .card-iphone,
+  .card-child-safety,
+  .card-macbook,
+  .card-ipad-air,
+  .card-apple-card,
+  .card-trade-in {
+    height: auto !important;
+    min-height: 420px;
+    padding: 20px 10px;
+  }
+}
